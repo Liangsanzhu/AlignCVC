@@ -54,6 +54,25 @@ Install the required dependencies using:
 pip install -r requirements.txt
 ```
 ---
+## 🛠️ Usage
+1. Clone the repository
+git clone https://github.com/Liangsanzhu/AlignCVC.git
+cd AlignCVC
+
+2. Run Tests
+[Provide example commands for running testing scripts.]
+
+
+3. Dataset Preparation
+[Provide instructions for downloading and preparing datasets.]
+
+
+4. Training
+TBC
+
+
+
+---
 ## 📝 Citation
 ```plaintext
 @article{your_paper,
