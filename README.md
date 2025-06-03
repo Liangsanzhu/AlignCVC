@@ -56,8 +56,10 @@ pip install -r requirements.txt
 ---
 ## 🛠️ Usage
 1. Clone the repository
+```plaintext
 git clone https://github.com/Liangsanzhu/AlignCVC.git
 cd AlignCVC
+```
 
 2. Run Tests
 [Provide example commands for running testing scripts.]
