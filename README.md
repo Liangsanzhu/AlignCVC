@@ -1,6 +1,7 @@
 # AlignCVC: Official Repository for the Paper
 
 Welcome to the official repository for **AlignCVC**! This repository serves as the homepage for the paper and provides resources such as code, datasets, pretrained models, and experimental results.
+![1748962781055](https://github.com/user-attachments/assets/a09e45ba-c288-4ea4-97b1-a78f9395015d)
 
 ---
 
@@ -31,16 +32,15 @@ AlignCVC/
 ---
 ## 🚀 To-Do List
 🔧 Planned Updates
+- [ ] Add research paper link.
 - [ ] Release testing scripts for reproducing results.
 - [ ] Provide training code for custom datasets.
 - [ ] Upload pretrained model weights.
 - [ ] Add dataset preparation instructions.
-- [ ] Share visualization tools for results.
-- [ ] Publish detailed documentation and examples.
 
 ✅ Completed
 - [x] Create repository and initial README.
-- [x] Add research paper link.
+
 
 ---
 ## 📦 Requirements
@@ -70,6 +70,7 @@ cd AlignCVC
 
 
 4. Training
+5. 
 TBC
 
 
