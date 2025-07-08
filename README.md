@@ -78,11 +78,13 @@ TBC
 ---
 ## 📝 Citation
 ```plaintext
-@article{your_paper,
-  title={AlignCVC: Aligning Cross-View Consistency to Image-to-3D Generation},
-  author={Your Name and Co-Authors},
-  journal={[Journal/Conference Name]},
-  year={202X},
-  url={[Link to paper]}
+@misc{liang2025aligncvcaligningcrossviewconsistency,
+  title={AlignCVC: Aligning Cross-View Consistency for Single-Image-to-3D Generation}, 
+  author={Xinyue Liang and Zhiyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
+  year={2025},
+  eprint={2506.23150},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2506.23150}, 
 }
 ```
