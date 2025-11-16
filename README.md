@@ -25,10 +25,10 @@ The Hong Kong Polytechnic University
         <img src="https://img.shields.io/badge/💡-Project%20Page-gold">
         </a>
         <a href="https://arxiv.org/abs/2506.23150" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-2312.06640-b31b1b.svg">
+        <img src="https://img.shields.io/badge/arXiv-2506.23150-b31b1b.svg">
         </a>
          <a href="https://github.com/Liangsanzhu/AlignCVC/" target='_blank'>
-        <img src="https://img.shields.io/badge/GitHub-Awesome--VSR--Diffusion-181717.svg?logo=github&logoColor=white">
+        <img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white">
         </a>
     </h4>
 </div>
