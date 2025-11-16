@@ -35,7 +35,7 @@ The Hong Kong Polytechnic University
 
 <p align="center">
 
-<img src="assets/intro.svg" alt="Visual Results">
+<img src="assets/intro.png" alt="Visual Results">
 
 </p>
 
@@ -50,7 +50,7 @@ The Hong Kong Polytechnic University
 
 <p align="center">
 
-<img src="assets/pipeline.svg" alt="AlignCVC Framework">
+<img src="assets/pipeline.png" alt="AlignCVC Framework">
 
 </p>
 
