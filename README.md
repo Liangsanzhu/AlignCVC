@@ -64,8 +64,7 @@ The Hong Kong Polytechnic University
     ```
     
 ## 💬 Contact:
-If you have any problem, please feel free to contact me at liuyuanliusu@gmail.com
-
+If you have any problem, please feel free to contact me at xinyue.liang@connect.polyu.hk
 ### Citations
 If our code helps your research or work, please consider citing our paper.
 The following are BibTeX references:
