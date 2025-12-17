@@ -81,9 +81,9 @@ The Hong Kong Polytechnic University
 
 **Note**: The system and dataloader code are currently not available, coming soon.
 
-## 📦 Checkpoints
+## 📦 Download Checkpoints
 
-Checkpoints are hosted on HuggingFace. To download and upload checkpoints:
+Checkpoints are hosted on HuggingFace. To download them:
 
 1. Install git-xet (required for large file handling)
     ```bash
@@ -97,11 +97,6 @@ Checkpoints are hosted on HuggingFace. To download and upload checkpoints:
     ```
 
 3. Make sure SSH key is set in your user settings (https://huggingface.co/settings/keys)
-
-4. Push checkpoints to HuggingFace
-    ```bash
-    git push
-    ```
     
 ## 💬 Contact:
 If you have any problem, please feel free to contact me at xinyue.liang@connect.polyu.hk
