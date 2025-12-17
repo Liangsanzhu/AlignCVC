@@ -57,15 +57,32 @@ The Hong Kong Polytechnic University
 
 ## 🔧 Dependencies and Installation
 
-1. Clone repo
+1. Clone and install threestudio dependencies
     ```bash
-    git clone https://github.com/Liangsanzhu/AlignCVC.git
-    cd AlignCVC
+    git clone https://github.com/threestudio-project/threestudio.git
+    cd threestudio
+    pip install -e .
     ```
+
+2. Download AlignCVC and replace the custom module
+    ```bash
+    cd ..
+    git clone https://github.com/Liangsanzhu/AlignCVC.git
+    cp -r AlignCVC/custom threestudio/
+    # Or remove the original custom directory first, then copy
+    # rm -rf threestudio/custom
+    # cp -r AlignCVC/custom threestudio/
+    ```
+
+3. Navigate to the threestudio directory to start using
+    ```bash
+    cd threestudio
+    ```
+
+**Note**: The system and dataloader code are currently not available, coming soon.
     
 ## 💬 Contact:
-If you have any problem, please feel free to contact me at liuyuanliusu@gmail.com
-
+If you have any problem, please feel free to contact me at xinyue.liang@connect.polyu.hk
 ### Citations
 If our code helps your research or work, please consider citing our paper.
 The following are BibTeX references:

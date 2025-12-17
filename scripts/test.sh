@@ -1,0 +1,1 @@
+OPENCV_IO_ENABLE_OPENEXR=1 python launch.py --config ./configs/aligncvc.yaml --test --gpu 2 resume=./ckpts/system_ckpt/final.ckpt

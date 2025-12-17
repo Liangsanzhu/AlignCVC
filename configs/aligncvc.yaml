@@ -1,0 +1,110 @@
+name: "aligncvc"
+tag: "new_lgm_train_asd_clip_diff"
+exp_root_dir: "outputs"
+seed: 0
+
+
+
+
+data_type: "gbuffer-datamodule"
+data:
+  batch_size: 1
+  rgb_dir: "./exported_rgbs_new"
+  json_dir: "./gbuffer/subdirectories.txt" #rgb dir path list
+  num_sample: 4
+  resolution: 512
+ 
+ 
+system_type: "aligncvc-system"
+system:
+  geometry_type: "aligncvc-geo"
+  geometry:
+    init_ckpt: './LGM/pretrained/model_fp16.safetensors'
+   
+
+
+  guidance_type: "wonder3d-guidance"
+  guidance:
+    pretrained_unet_path: './Wonder3D/ckpts/unet'
+    peft_model_id: "./ckpt/guidance_ckpt/"
+    
+    save_dir: 'outputs/'
+
+    pred_type: 'joint'
+    seed: 42
+    validation_batch_size: 1
+    dataloader_num_workers: 64
+
+    local_rank: -1
+
+    pipe_kwargs:
+      camera_embedding_type: 'e_de_da_sincos'
+      num_views: 4
+
+    validation_guidance_scales: [3.0]
+    pipe_validation_kwargs:
+      eta: 1.0
+    validation_grid_nrow: 6
+    trainable_modules: null
+
+
+    unet_from_pretrained_kwargs:
+      camera_embedding_type: 'e_de_da_sincos'
+      projection_class_embeddings_input_dim: 14
+      num_views: 4
+      sample_size: 32
+      
+      cd_attention_mid: true
+      zero_init_conv_in: false
+      zero_init_camera_projection: false
+      multiview_attention: true
+      sparse_mv_attention: false
+      mvcd_attention: false
+
+
+    num_views: 4
+    snr_gamma: 5.0
+
+    
+    camera_embedding_type: 'e_de_da_sincos'
+
+    enable_xformers_memory_efficient_attention: true
+    guidance_scale: 1.3
+    do_classifier_free_guidance: True
+    use_dmd: True
+    use_gan_clip: True
+    use_asd: True
+ 
+  loss:
+    lambda_asd: 2.
+    lambda_recon:  1.0
+    lambda_gan: 1000.
+
+
+  optimizer:
+    name: Adan # for fast convergence
+    args:
+      betas: [0.98, 0.92, 0.99]
+      eps: 1.e-15
+    params:
+      geometry:
+        lr: 2.0e-05 #0.0004 #0.0004
+      guidance:
+        lr: 0.0001
+
+
+trainer:
+  max_steps: 5000000
+  log_every_n_steps: 10
+  num_sanity_val_steps: 0
+  val_check_interval: 1000
+  enable_progress_bar: true
+  precision: 32 #bf16-mixed
+  
+  strategy: "ddp_find_unused_parameters_true"
+  accumulate_grad_batches: 1
+ 
+checkpoint:
+  save_last: true
+  save_top_k: -1
+  every_n_train_steps: 1000 
